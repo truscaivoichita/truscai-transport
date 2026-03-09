@@ -97,6 +97,10 @@ p {
   object-fit: cover;
   display: block;
 }
+#gallery img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
 
 /* Contact Section */
 #contact {
