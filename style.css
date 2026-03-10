@@ -131,6 +131,10 @@ p {
 #contact a:hover {
   text-decoration: underline;
 }
+form label,
+form input {
+  display: block;
+}
 
 /* Footer Section */
 footer {

@@ -208,6 +208,7 @@
         <p>
           <a href="tel:+34642771871"> +34 642 771 871 </a>
         </p>
+        <p><a href="https://wa.me/34642771871">Chat on WhatsApp</a></p>
         <button onclick="showMessage()">Request Call</button>
       </div>
 
@@ -248,6 +249,57 @@
       loading="lazy"
     >
     </iframe>
+
+    <section id="quote">
+      <h2>Request a Freight Quote</h2>
+      <form action="secretary.html">
+        <label for="name">Full Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          value="name"
+          placeholder="Your full name"
+          required
+        />
+        <label for="company">Company</label>
+        <input type="text" name="company" id="company" value="comapany" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="email" required />
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" value="phone" />
+        <label for="pickup">Pickup Location</label>
+        <input
+          type="text"
+          name="pickup"
+          id="pickup"
+          value="pickup"
+          placeholder="City, Country"
+        />
+        <label for="delivery">Delivery Location</label>
+        <input type="text" name="delivery" id="delivery" value="delivery" />
+        <label for="cargo">Cargo Type</label>
+        <input type="text" name="cargo" id="cargo" value="cargo" />
+        <label for="weight">Cargo Weight (kg)</label>
+        <input type="number" name="weight" id="weight" value="weight" />
+        <label for="service">Service Type</label>
+        <select name="service" id="service">
+          <option value="international">International Freight</option>
+          <option value="express">Express Delivery</option>
+          <option value="national">National Delivery</option>
+        </select>
+        <label for="file">Upload Documents</label>
+        <input type="file" name="file" id="file" />
+        <label for="message">Additional Details</label>
+        <textarea name="message" id="message"></textarea>
+        <label for="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox" required />
+          I agree to the privacy policy
+        </label>
+        <button type="submit">Send Quote Request</button>
+      </form>
+    </section>
+
     <!-- Add a Real Contact Form -->
     <!-- Add Button: <a href="mailto:truscai_voichita@yahoo.com">Send</a></p> -->
 
