@@ -10,14 +10,10 @@ body {
 }
 
 /* Navigation Bar Section */
-header a {
-  text-decoration: none;
-  background-color: #ff7a00;
-  color: #ffffff;
-  padding: 3px 7px;
-}
+
 header img {
   width: 400px;
+  margin: auto;
 }
 h1 {
   background-color: #0d0c75;
@@ -30,11 +26,16 @@ header p {
   padding: 5px 10px;
   margin: 0;
 }
+header a {
+  text-decoration: none;
+  color: #ffffff;
+}
 #btnContact {
   background-color: #ff7a00;
   border: none;
-  padding: 5px 10px;
   border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 16px;
   margin: 10px;
 }
 #btnContact a:hover {
@@ -65,13 +66,15 @@ nav a:hover {
 }
 li {
   list-style-type: none;
+  text-align: justify;
 }
 
 /* Sections  */
 section {
   max-width: 600px;
-  padding: 40px;
+  padding: 30px;
   margin: 0 auto;
+  border-radius: 10px;
 }
 section:nth-child(even) {
   background-color: #f6f6f6;
@@ -132,6 +135,11 @@ p {
   text-decoration: underline;
 }
 
+/* Quote Section */
+form {
+  max-width: 700px;
+  margin: auto;
+}
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -144,9 +152,7 @@ form label {
   font-size: 14px;
   font-weight: 600;
   color: #2c2c2c;
-  /* margin-bottom: 10px; */
 }
-
 form textarea,
 form select,
 form input {
@@ -163,11 +169,21 @@ textarea {
   resize: vertical;
 }
 .checkbox-group {
-  display: flex;
+  display: block;
   align-items: center;
   gap: 8px;
 }
-
+input[type="file"] {
+  padding: 6px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #ff7a00;
+}
 form button {
   display: block;
   margin: 20px auto 0;
@@ -182,6 +198,7 @@ form button {
 form button:hover {
   background-color: #e66a00;
 }
+
 /* Footer Section */
 footer {
   background-color: #0d0c75;
@@ -196,5 +213,8 @@ footer p {
 @media (max-width: 700px) {
   .row {
     grid-template-columns: 1fr;
+  }
+  section {
+    padding: 25px;
   }
 }

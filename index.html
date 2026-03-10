@@ -25,7 +25,7 @@
       <h1>Truscai Transport</h1>
       <p>Reliable Freight & Logistics Solutions Across Spain and Europe</p>
       <button type="button" id="btnContact">
-        <a href="#contact">Request a Free Freight Quote</a>
+        <a href="#quote">Request a Free Freight Quote</a>
       </button>
       <nav>
         <ul>
@@ -256,6 +256,16 @@
       <form action="secretary.html">
         <div class="row">
           <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="FirstName LastName"
+              required
+            />
+          </div>
+          <div>
             <label for="email">Email</label>
             <input
               type="email"
@@ -265,6 +275,8 @@
               required
             />
           </div>
+        </div>
+        <div class="row">
           <div>
             <label for="phone">Phone</label>
             <input
@@ -274,8 +286,6 @@
               placeholder="+34 600 000 000"
             />
           </div>
-        </div>
-        <div class="row">
           <div>
             <label for="pickup">Pickup Location</label>
             <input
@@ -285,6 +295,9 @@
               placeholder="City, Country"
             />
           </div>
+        </div>
+
+        <div class="row">
           <div>
             <label for="delivery">Delivery Location</label>
             <input
@@ -294,8 +307,6 @@
               placeholder="City, Country"
             />
           </div>
-        </div>
-        <div class="row">
           <div>
             <label for="cargo">Cargo Type</label>
             <input
@@ -305,6 +316,8 @@
               placeholder="Pallets / Machinery / Boxes"
             />
           </div>
+        </div>
+        <div class="row">
           <div>
             <label for="weight">Cargo Weight (kg)</label>
             <input
@@ -314,8 +327,6 @@
               placeholder="Weight in kg"
             />
           </div>
-        </div>
-        <div class="row">
           <div>
             <label for="service">Service Type</label>
             <select name="service" id="service">
@@ -324,20 +335,23 @@
               <option value="national">National Delivery</option>
             </select>
           </div>
+        </div>
+
+        <div class="row">
           <div>
             <label for="file">Upload Documents</label>
             <input type="file" name="file" id="file" />
           </div>
-        </div>
-        <div class="row">
+
           <div>
             <label for="message">Additional Details</label>
             <textarea name="message" id="message"></textarea>
           </div>
-          <div class="checkbox-group">
-            <input type="checkbox" id="checkbox" required />
-            <label for="checkbox">I agree to the privacy policy</label>
-          </div>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="checkbox" required />
+          <label for="checkbox">I agree to the privacy policy</label>
         </div>
         <button type="submit">Send Quote Request</button>
       </form>
