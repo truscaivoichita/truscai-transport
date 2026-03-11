@@ -4,16 +4,51 @@ Accent Color: Transport Orange (used for buttons / highlights)- #FF7A00
 Neutral Background: Light Logistics Grey- #F4F6FA 
 Text Color: Dark Grey- #2C2C2C*/
 body {
+  font-family: "Inter", sans-serif;
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
 /* Navigation Bar Section */
-
+header {
+  background-image: url("images/1.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+}
 header img {
   width: 400px;
   margin: auto;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+nav ul {
+  background-color: #0d0c75;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 5px;
+}
+nav ul li {
+  margin: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  background-color: #0d0c75;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: block;
+  text-align: center;
+}
+nav a:hover {
+  color: #0d0c75;
+  background-color: #f0f8ff;
 }
 h1 {
   background-color: #0d0c75;
@@ -21,49 +56,32 @@ h1 {
   text-align: center;
   padding: 0;
   margin: 0;
+  font-size: 56px;
 }
 header p {
   padding: 5px 10px;
-  margin: 0;
-}
-header a {
-  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 20px;
   color: #ffffff;
 }
-#btnContact {
+
+.quoteBtn {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #ffffff;
   background-color: #ff7a00;
   border: none;
   border-radius: 4px;
   padding: 10px 16px;
   font-size: 16px;
-  margin: 10px;
 }
-#btnContact a:hover {
+.quoteBtn:hover {
   color: #2c2c2c;
 }
-nav ul {
-  background-color: #0d0c75;
-  list-style-type: none;
-  margin: auto;
-  overflow: hidden;
-}
-nav li {
-  display: inline-block;
-}
-nav ul a {
-  display: block;
-  text-decoration: none;
-  background-color: #0d0c75;
-  color: #ffffff;
-  padding: 5px 10px;
-  border-radius: 4px;
-  margin: 2px 10px;
-  text-align: center;
-}
-nav a:hover {
-  color: #0d0c75;
-  background-color: #f0f8ff;
-}
+
 li {
   list-style-type: none;
   text-align: justify;
@@ -72,7 +90,7 @@ li {
 /* Sections  */
 section {
   max-width: 600px;
-  padding: 30px;
+  padding: 70px 30px;
   margin: 0 auto;
   border-radius: 10px;
 }
@@ -204,7 +222,7 @@ footer {
   background-color: #0d0c75;
   color: #ffffff;
   text-align: center;
-  padding: 1px 2px;
+  padding: 30px;
 }
 footer p {
   color: #f6f6f6;

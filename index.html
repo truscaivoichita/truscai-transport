@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Truscai Voichita Maria" />
+    <meta property="og:title" content="Truscai Transport" />
+    <meta
+      property="og:description"
+      content="Reliable freight across Spain and Europe"
+    />
+    <meta property="og:type" content="website" />
     <meta
       name="description"
       content="Truscai Transport provides reliable freight and logistics services across Spain and Europe, specializing in international transport, fleet management and express delivery."
@@ -16,17 +22,16 @@
       Truscai Transport | Freight & Logistics Across Spain and Europe
     </title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> -->
   </head>
   <body>
     <!-- Navigation Bar Section-->
     <header>
       <img src="images/logo-a.png" alt="logo" />
-      <h1>Truscai Transport</h1>
-      <p>Reliable Freight & Logistics Solutions Across Spain and Europe</p>
-      <button type="button" id="btnContact">
-        <a href="#quote">Request a Free Freight Quote</a>
-      </button>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -36,6 +41,10 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <h1>Truscai Transport</h1>
+      <p>Reliable Freight & Logistics Solutions Across Spain and Europe</p>
+      <a href="#quote" class="quoteBtn">Request a Free Freight Quote</a>
+
       <!-- Hero Section -->
       <!-- Add a background image
         Center text
@@ -62,46 +71,12 @@
     <section id="services">
       <h2>Our Services</h2>
       <ul>
-        <li>✔ International Freight Transport</li>
-        <li>✔ Route Optimization</li>
+        <li>✔ 🚚 International Freight Transport</li>
+        <li>✔ 📍 Route Optimization</li>
         <li>✔ Fleet Management</li>
         <li>✔ Regulatory Compliance</li>
-        <li>✔ Express Deliveries</li>
+        <li>✔ 📦 Express Deliveries</li>
       </ul>
-    </section>
-
-    <!-- Operating Areas Section -->
-    <section id="areas">
-      <h2>Operating Areas</h2>
-      <p>
-        We operate mainly in Spain, with services available across other
-        European Union countries as well.
-      </p>
-    </section>
-
-    <!-- Values Section -->
-    <section id="values">
-      <h2>Our Core Values</h2>
-      <ul>
-        <li>✔ Reliability</li>
-        <li>✔ Transparency</li>
-        <li>✔ Professionalism</li>
-        <li>✔ Long-Term Partnerships</li>
-      </ul>
-    </section>
-
-    <section id="stats">
-      <h2>Fleet Stats</h2>
-      <ul>
-        <li>✔ 10+ years experience</li>
-        <li>✔ 50+ routes served</li>
-        <li>✔ EU coverage</li>
-        <li>✔ Reliable delivery</li>
-      </ul>
-      <h3>Clients / Partners</h3>
-      <div>Trusted Partner:</div>
-      <!-- With their logo. -->
-      <p>✔ Sertrans</p>
     </section>
 
     <!-- Fleet Section -->
@@ -112,12 +87,12 @@
         long-distance European freight operations.
       </p>
       <div>
-        <img src="images/1.jpeg" alt="MAN Truck" width="300" />
+        <img src="images/1.jpeg" alt="MAN Truck" width="300" loading="lazy" />
         <p>MAN TGX</p>
         <p>Long distance transport</p>
       </div>
       <div>
-        <img src="images/7.jpeg" alt="IVECO Truck" width="300" />
+        <img src="images/7.jpeg" alt="IVECO Truck" width="300" loading="lazy" />
         <p>IVECO Stralis</p>
         <p>European freight</p>
       </div>
@@ -133,29 +108,13 @@
       </map>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <div>
-        <!-- <img src="images/3.jpeg" alt="img3" />
-        <img src="images/2.jpeg" alt="img2" /> -->
-        <img src="images/1.jpeg" alt="img1" />
-        <img src="images/4.jpeg" alt="img4" />
-        <img src="images/5.jpeg" alt="img5" />
-        <img src="images/6.jpeg" alt="img6" />
-        <img src="images/7.jpeg" alt="img7" />
-      </div>
-      <!-- 
-      2 images per row ok
-        equal size ok
-        small gap between ok
-        hover zoom
-
-        Use multiple images
-        Float them left
-        Add hover effects in CSS
-        Border styling
-        This will improve layout control. -->
+    <!-- Operating Areas Section -->
+    <section id="areas">
+      <h2>Operating Areas</h2>
+      <p>
+        We operate mainly in Spain, with services available across other
+        European Union countries as well.
+      </p>
     </section>
 
     <!-- Why Choose Truscai Transport? Section -->
@@ -188,12 +147,35 @@
         Contact us to discuss your freight needs and receive a personalized
         transport solution.
       </p>
+      <a href="#quote" class="quoteBtn">Request a Free Freight Quote</a>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div>
+        <img
+          src="images/3.jpeg"
+          alt="MAN truck parked at logistics depot"
+          loading="lazy"
+        />
+        <img src="images/2.jpeg" alt="img2" loading="lazy" />
+        <img src="images/1.jpeg" alt="img1" loading="lazy" />
+        <img src="images/4.jpeg" alt="img4" loading="lazy" />
+        <img src="images/5.jpeg" alt="img5" loading="lazy" />
+        <img src="images/6.jpeg" alt="img6" loading="lazy" />
+        <img src="images/7.jpeg" alt="img7" loading="lazy" />
+      </div>
+      <!-- 
+        hover zoom
+        Add hover effects in CSS
+        Border styling
+        This will improve layout control. -->
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
-
       <div>
         <h3>📧 Email</h3>
         <p>
@@ -202,7 +184,6 @@
           </a>
         </p>
       </div>
-
       <div>
         <h3>📞 Phone</h3>
         <p>
@@ -211,7 +192,6 @@
         <p><a href="https://wa.me/34642771871">Chat on WhatsApp</a></p>
         <button onclick="showMessage()">Request Call</button>
       </div>
-
       <div>
         <h3>📍 Address</h3>
         <address>
@@ -220,13 +200,11 @@
           Castellón, Spain
         </address>
       </div>
-
       <div>
         <h3>🕒 Opening Hours</h3>
-        <p>Monday – Friday</p>
-        <p>08:00 – 20:00</p>
+        <p>Monday - Friday</p>
+        <p>08:00 - 20:00</p>
       </div>
-
       <div>
         <h3>LinkedIn</h3>
         <p>
@@ -239,16 +217,44 @@
         </p>
       </div>
     </section>
+
+    <!-- Values Section -->
+    <section id="values">
+      <h2>Our Core Values</h2>
+      <ul>
+        <li>✔ Reliability</li>
+        <li>✔ Transparency</li>
+        <li>✔ Professionalism</li>
+        <li>✔ Long-Term Partnerships</li>
+      </ul>
+    </section>
+
+    <section id="stats">
+      <h2>Fleet Stats</h2>
+      <ul>
+        <li>✔ 10+ years experience</li>
+        <li>✔ 50+ routes served</li>
+        <li>✔ EU coverage</li>
+        <li>✔ Reliable delivery</li>
+      </ul>
+      <h3>Clients / Partners</h3>
+      <div>Trusted Partner:</div>
+      <!-- With their logo. -->
+      <p>✔ Sertrans</p>
+    </section>
+
     <!-- Location Section -->
-    <h2>Our Location</h2>
-    <iframe
-      src="https://maps.google.com/maps?q=torreblanca%20castellon&t=&z=13&ie=UTF8&iwloc=&output=embed"
-      width="100%"
-      height="200"
-      style="border: 0"
-      loading="lazy"
-    >
-    </iframe>
+    <section>
+      <h2>Our Location</h2>
+      <iframe
+        src="https://maps.google.com/maps?q=torreblanca%20castellon&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="200"
+        style="border: 0"
+        loading="lazy"
+      >
+      </iframe>
+    </section>
 
     <!-- Quote Section -->
     <section id="quote">
@@ -292,7 +298,7 @@
               type="text"
               name="pickup"
               id="pickup"
-              placeholder="City, Country"
+              placeholder="Example: Madrid, Spain"
             />
           </div>
         </div>
@@ -340,7 +346,12 @@
         <div class="row">
           <div>
             <label for="file">Upload Documents</label>
-            <input type="file" name="file" id="file" />
+            <input
+              type="file"
+              name="file"
+              id="file"
+              placeholder="Upload invoice, cargo details or documents (optional)"
+            />
           </div>
 
           <div>
